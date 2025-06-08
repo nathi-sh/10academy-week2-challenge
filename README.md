@@ -9,4 +9,4 @@
 - Used `google-play-scraper` python library.
 - Cleaned data by removing duplicates and missing values.
 - Normalized dates to `YYYY-MM-DD` format.
-- Saved data to `reviews_cleaned.csv`.
+- Saved data to `bank_reviews_cleaned.csv`.
