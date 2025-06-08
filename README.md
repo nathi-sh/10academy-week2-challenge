@@ -15,11 +15,26 @@ Normalized dates to YYYY-MM-DD format.
 
 Saved cleaned data to bank_reviews_cleaned.csv.
 
-Task 2: Sentiment and Thematic Analysis (In Progress)
-Performed sentiment analysis using distilbert-base-uncased-finetuned-sst-2-english model.
+## Task 2: Sentiment Analysis and Theme Tagging
 
-Extracted keywords and significant phrases from reviews.
+### Summary
+This task analyzes customer feedback for Ethiopian bank apps (CBE, BOA, Dashen) using NLP techniques.
 
-Saved sentiment scores and keyword data to CSV files.
+### Scripts
+- `task2_sentiment.py`: Performs sentiment analysis using a pre-trained DistilBERT model.
+- `task2_keywords_themes.py`: Extracts top keywords using TF-IDF.
+- `task2_theme_tagging.py`: Tags each review with a thematic label based on keyword matches.
+- `task2_analysis.py`: Generates bar charts for theme frequency and sentiment distribution.
 
-Next step: Group extracted keywords into 3–5 meaningful themes per bank for thematic analysis.
+### Key Findings
+- **Most common themes**: Account Access Issues, UI/UX, and Transaction Performance.
+- **Frequent sentiments**:
+  - Negative sentiment is high for App Stability & Bugs.
+  - Positive sentiment dominates in General Feedback.
+- 115 reviews had no theme match.
+
+### Outputs
+- `bank_reviews_with_sentiment.csv`
+- `bank_reviews_with_sentiment_and_themes.csv`
+- `top_keywords.csv`
+
